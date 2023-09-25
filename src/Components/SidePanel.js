@@ -16,7 +16,6 @@ import {
 } from "@heroicons/react/24/solid";
 
 function SidePanel({handleLogOut}) {
-  const {username,isAdmin} = useContext(AuthContext)
 
   return (
     <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] flex-col p-4 shadow-xl bg-dark text-white border-1">

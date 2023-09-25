@@ -1,15 +1,15 @@
 import axios from "axios"
 
-const APIURL = "https://localhost:7191/api"
+const APIURL =process.env.REACT_APP_API_AUTH
 
 const api = axios.create({
     baseURL:APIURL
 });
 
-export const register = (data) => api.post('/Auth/register', data);
-export const login = (data) => api.post('/Auth/login', data);
-export const logout = (username) => api.post(`/Auth/logout?username=${username}`);
+export const register = (data) => api.post('/register', data);
+export const login = (data) => api.post('/login', data);
+export const logout = (username) => api.post(`/logout?username=${username}`);
 
-export const getUser = (id) => api.get(`/Auth/get-user?id=${id}`);
+export const getUser = (id) => api.get(`/get-user?id=${id}`);
 
-export const checkUser = (token) => api.get(`/Auth/checkUser?token=${token}`);
+export const checkUser = (token) => api.get(`/checkUser?token=${token}`);

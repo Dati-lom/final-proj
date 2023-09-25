@@ -19,9 +19,9 @@ function Login() {
       try{
         const response = await auth.login(loginDto)
         let token = response.data.token;
-        localStorage.setItem("Token",token)
+        z.setItem("Token",token)
         TokenValid(token)
-        console.log(localStorage.getItem("Token"))
+        console.log(z.getItem("Token"))
         navigate("/")
         setAuthed(true);
       }catch(error){

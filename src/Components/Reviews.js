@@ -24,7 +24,7 @@ function Reviews() {
         onClick={()=> handleRevClick(review.revId)}        
         >
         <ReviewC review={review}></ReviewC>
-
+z
         </a>
       )
     })}</div>

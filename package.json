@@ -13,6 +13,7 @@
     "bootstrap": "^5.3.1",
     "buffer": "^6.0.3",
     "css.gg": "^2.1.1",
+    "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "jwt-decode": "^3.1.2",
     "jwt-simple": "^0.5.6",
